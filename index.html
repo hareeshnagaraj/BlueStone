@@ -15,30 +15,31 @@
 	*/
 	var infoObject = 
 	{
-		'1':{
+		1:{
 			"left":"Structured Settlements",
 			"leftsub":"and a team you can trust",
 			"right":"Exceptional practice"
 		},
-		'2':{
+		2:{
 			"left":"Here for you",
+			"leftsub":"Helping clients move forward",
 			"right":"blahbityblah blah blah"
 
 		}
 	};
 	$(document).ready(function(){
 		console.log(infoObject);
-		$("#topContainer_left_text").html(infoObject["1"]["left"]);
-		$("#topContainer_right_text").html(infoObject["1"]["right"]);
+		$("#topContainer_left_text").html(infoObject[1]["left"]);
+		$("#topContainer_right_text").html(infoObject[1]["right"]);
 
-		$("#topContainer_left_sub").html(infoObject["1"]["leftsub"]);
+		$("#topContainer_left_sub").html(infoObject[1]["leftsub"]);
 
 	});
 	</script>
 </head>
 <body>
 	<div class="nav">
-		<div class="navLogo">BlueStone Settlements</div>
+		<div class="navLogo"><img src="img/blueStone_ghost.png" /></div>
 		<ul>
 			<a><li>OUR FIRM</li></a>
 			<a><li>ATTORNEYS</li></a>
