@@ -19,7 +19,11 @@ html,body{
 		width:100%;
 		height:105px;
 		position: fixed;
+		z-index: 1000;
 		background-color: white;
+		box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+		-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+		-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
 	}
 	.navLogo{
 		font-family: 'Lato',sans-serif;
@@ -174,6 +178,41 @@ html,body{
 		position: absolute;
 	}
 
+	/*
+		CSS for the firm page
+	*/
+	.topContainer_firm{
+		width: 100%;
+		height: 200px;
+		padding-top: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/firmtop.jpg');
+		background-attachment: fixed;
+		background-position: 0px -25px;
+		position: relative;
+	}
+	.topContainer_firm_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(255,153,0,0.2);
+	}
+	.topContainer_firm_text{
+		position: absolute;
+		left:100px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 30px;
+		color:white;
+		margin:auto;
+	}
+	.firmBottom{
+		width:100%;
+		min-height: 600px;
+	}
+
 }
 @media handheld,screen and (min-width: 751px) {
 	/*
@@ -232,6 +271,9 @@ html,body{
 		background-color: white;
 		z-index: 100;
 		position: fixed;
+		box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+		-moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+		-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
 	}
 	.navLogo{
 		font-family: 'Lato',sans-serif;
@@ -239,7 +281,7 @@ html,body{
 		font-size: 25px;
 		position:absolute;
 		bottom:0px;
-		margin-left:35px;
+		margin-left:115px;
 		letter-spacing: 1px;
 	}
 	.navLogo > img{
@@ -252,6 +294,10 @@ html,body{
 		font-family: 'Lato',sans-serif;
 		color:rgb(34,34,34);
 	
+	}
+	.nav > ul > a{
+		text-decoration: none;
+		color:rgb(34,34,34);
 	}
 	.nav > ul > a > li{
 		display: inline;
@@ -412,6 +458,75 @@ html,body{
 	.thirdContainerBox > img{
 		width:100px;
 		margin-top: 70px;
+	}
+	
+	/*
+		CSS for the firm page
+	*/
+	.topContainer_firm{
+		width: 100%;
+		height: 200px;
+		padding-top: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/firmtop.jpg');
+		background-position: 0px -25px;
+		overflow: hidden;
+		position: relative;
+		background-attachment: fixed;
+
+
+	}
+	.topContainer_firm_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(255,153,0,0.2);
+	}
+	.topContainer_firm_text{
+		position: absolute;
+		left:100px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 50px;
+		color:white;
+	}
+	.firmBottom{
+		width:100%;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.firmBottomInner{
+		width:80%;
+		margin:auto;
+		text-align: left;
+		color:rgba(29,48,80,1);
+		font-family: 'Montserrat',sans-serif;
+		font-size: 25px;
+	}
+	.firmSecondBottom{
+		width:100%;
+		margin:auto;
+		height:600px;
+		overflow: hidden;
+		padding-bottom: 50px;
+	}
+	.firmSecondBottom_left{
+		width:50%;
+		height:100%;
+		float: left;
+		background-color: rgba(29,48,80,1);
+	}
+	.firmSecondBottom_right{
+		width:50%;
+		height:100%;
+		float: left;
+		background-size: cover;
+		background-position: 0px -300px;
+		background-image: url('../img/firm_rightbackground.jpg');
+		background-repeat: no-repeat;
+
 	}
 
 }
