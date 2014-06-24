@@ -114,9 +114,22 @@ html,body{
 		width:300px;
 		height:300px;
 		margin:20px;
+		overflow: hidden;
 		display: inline-block;
 		background-color: rgba(29,48,80,1);
 		cursor:pointer;
+		-webkit-transition: 500ms ease-out 0.1s;
+		-moz-transition: 500ms ease-out 0.1s;
+		-o-transition: 500ms ease-out 0.1s;
+		transition: 500ms ease-out 0.1s;
+		position: relative;
+	}
+	.thirdContainerBox:hover{
+		background-color: #ff9900;
+	}
+	.thirdContainerBox > img{
+		width:100px;
+		margin-top: 90px;
 	}
 	/*
 	Elements for footer
@@ -148,6 +161,17 @@ html,body{
 		font-family: 'Montserrat', sans-serif;
 		color:rgba(29,48,80,1);
 
+	}
+		.boxDescrip{
+		font-family: 'Montserrat',sans-serif;
+		color:white;
+		font-size: 25px;
+		left: -400px;
+		width: 80%;
+		top:30px;
+		margin:auto;
+		text-align: left;
+		position: absolute;
 	}
 
 }
@@ -354,6 +378,40 @@ html,body{
 		display: inline-block;
 		background-color: rgba(29,48,80,1);
 		cursor:pointer;
+		text-align: center;
+		overflow: hidden;
+		-webkit-transition: 500ms ease-out 0.1s;
+		-moz-transition: 500ms ease-out 0.1s;
+		-o-transition: 500ms ease-out 0.1s;
+		transition: 500ms ease-out 0.1s;
+		position: relative;
+	}
+	.boxDescrip{
+		font-family: 'Montserrat',sans-serif;
+		color:white;
+		font-size: 25px;
+		left: -400px;
+		width: 80%;
+		top:30px;
+		margin:auto;
+		text-align: left;
+		position: absolute;
+	}
+	.containerText{
+		width:100%;
+		text-align: center;
+		font-family: 'Montserrat',sans-serif;
+		color:white;
+		position: absolute;
+		font-size: 25px;
+		bottom:20px;
+	}
+	.thirdContainerBox:hover{
+		background-color: #ff9900;
+	}
+	.thirdContainerBox > img{
+		width:100px;
+		margin-top: 70px;
 	}
 
 }

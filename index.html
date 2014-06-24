@@ -10,6 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 	<script type="text/javascript">
+	var currentInfo = 1;
 	/*
 	Creating the object that contains all the initial text display information
 	*/
@@ -24,15 +25,90 @@
 			"left":"Here for you",
 			"leftsub":"Helping clients move forward",
 			"right":"blahbityblah blah blah"
-
+		},
+		3:{
+			"left":"Providing solutions",
+			"leftsub":"Experienced attorneys available",
+			"right":"Improving your life"
 		}
 	};
+	function transition() {
+		$("#topContainer_left_text").fadeOut();
+		$("#topContainer_left_sub").fadeOut();
+		$("#topContainer_right_text").fadeOut();
+
+		currentInfo++;
+		if(currentInfo == 4){	
+			currentInfo = 1;
+		}
+
+		console.log(currentInfo);
+		setTimeout(function(){
+		$("#topContainer_left_text").css({"left":"30%"});
+		$("#topContainer_left_sub").css({"left":"40%"});
+		$("#topContainer_right_text").css({"left":"50%"});
+
+		$("#topContainer_left_text").delay(100).html(infoObject[currentInfo]["left"]);
+		$("#topContainer_right_text").delay(100).html(infoObject[currentInfo]["right"]);
+		$("#topContainer_left_sub").delay(100).html(infoObject[currentInfo]["leftsub"]);
+		$("#topContainer_left_text").show();
+		$("#topContainer_left_sub").show();
+		$("#topContainer_right_text").show();
+
+		$("#topContainer_left_text").animate({"left":"40%"},400);
+		$("#topContainer_left_sub").animate({"left":"50%"},400);
+		$("#topContainer_right_text").animate({"left":"40%"},400);
+
+		},900);
+
+
+
+	
+
+	}
+	setInterval(transition, 4000);
 	$(document).ready(function(){
 		console.log(infoObject);
 		$("#topContainer_left_text").html(infoObject[1]["left"]);
 		$("#topContainer_right_text").html(infoObject[1]["right"]);
-
 		$("#topContainer_left_sub").html(infoObject[1]["leftsub"]);
+
+		/*
+			The following jquery is used to construct the swipe in and out effect of the boxes describing the client's "process"
+		*/
+		$("#discuss").hover(function(){
+			$("#discuss > img").animate({"margin-right":"-400px"},300);
+			$("#discuss > .containerText").animate({"right":"-400px"},300);
+			$("#discuss > .boxDescrip").animate({"left":"30px"},300);
+
+		});
+		$("#discuss").mouseleave(function(){
+			$("#discuss > img").animate({"margin-right":"0px"},300);
+			$("#discuss > .containerText").animate({"right":"0px"},300);
+			$("#discuss > .boxDescrip").animate({"left":"-400px"},300);
+
+		});
+		$("#review").hover(function(){
+			$("#review > img").animate({"margin-right":"-400px"},300);
+			$("#review > .containerText").animate({"right":"-400px"},300);
+			$("#review > .boxDescrip").animate({"left":"30px"},300);
+
+		});
+		$("#review").mouseleave(function(){
+			$("#review > img").animate({"margin-right":"0px"},300);
+			$("#review > .containerText").animate({"right":"0px"},300);
+			$("#review > .boxDescrip").animate({"left":"-400px"},300);		
+		});
+		$("#establish").hover(function(){
+			$("#establish > img").animate({"margin-right":"-400px"},300);
+			$("#establish > .containerText").animate({"right":"-400px"},300);
+			$("#establish > .boxDescrip").animate({"left":"30px"},300);
+		});
+		$("#establish").mouseleave(function(){
+			$("#establish > img").animate({"margin-right":"0px"},300);
+			$("#establish > .containerText").animate({"right":"0px"},300);
+			$("#establish > .boxDescrip").animate({"left":"-400px"},300);		
+		});
 
 	});
 	</script>
@@ -70,9 +146,9 @@
 		<div class="thirdInner">
 			<div class="line"></div>
 			<div class="title" >PROCESS</div><br><br>
-			<div class="thirdContainerBox"></div>
-			<div class="thirdContainerBox"></div>
-			<div class="thirdContainerBox"></div>
+			<div id="discuss" class="thirdContainerBox"><div class="boxDescrip">Lorem ipsum dolor set</div><img src="img/icon_speechbubble.png" /><div class="containerText">DISCUSS</div></div>
+			<div id="review" class="thirdContainerBox"><div class="boxDescrip">Lorem ipsum dolor set</div><img src="img/icon_paperwork.png" /><div class="containerText">REVIEW</div></div>
+			<div id="establish" class="thirdContainerBox"><div class="boxDescrip">Lorem ipsum dolor set</div><img src="img/icon_handshake.png" /><div class="containerText">ESTABLISH</div></div>
 		</div>
 	</div>
 
