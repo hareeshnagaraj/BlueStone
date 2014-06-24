@@ -1,6 +1,12 @@
 html,body{
 	margin:0;
 	padding:0;
+	height:100%;
+}
+.topInner{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
 }
 @media handheld,screen and (max-width: 750px) {
 	/*
@@ -49,11 +55,146 @@ html,body{
 		background-repeat: no-repeat;
 		background-image: url('../img/index_background.jpg');
 	}
+	#topContainer_left_text{
+		display: none;
+	}
+	#topContainer_left_sub{
+		display: none;
+	}
+	/*
+		Container for second panel on index page
+	*/
+	.title{
+		font-size: 60px;
+		text-align: center;
+		margin: auto;
+	}
+	.secondContainer{
+		width:100%;
+		height:500px;
+		background-color:white;
+		overflow: hidden;
+		text-align: center;
+	}
+	.secondInner{
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		font-size: 20px;
+		width:70%;
+		margin:auto;
+		margin-top:100px;
+	}
+	/*
+		Container for third panel
+	*/
+
+		.thirdContainer{
+		width:100%;
+		height:1250px;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		background-color: white;
+		overflow: hidden;
+		background-size:cover;
+		background-image: url('../img/thirdContainer.jpg');
+	}
+	.thirdInner{
+		width:100%;
+		padding-top: 100px;
+
+		height:100%;
+		background-color: rgba(255,255,255,0.7)
+	}
+	.thirdContainerBox{
+		width:300px;
+		height:300px;
+		margin:20px;
+		display: inline-block;
+		background-color: rgba(29,48,80,1);
+		cursor:pointer;
+	}
+	/*
+	Elements for footer
+	*/
+	.footer{
+		width:100%;
+		min-height:200px;
+		padding-bottom: 50px;
+		background-color: white;
+		text-align: center;
+		position: relative;
+	}
+	.footerLinks{
+		float: left;
+		margin:40px;
+	}
+	.footerLinks > div{
+		display: inline-block;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		cursor:pointer;
+		font-size: 13px;
+
+	}
+	.footerCopyright{
+		font-size: 13px;
+		top:80px;
+		left:40px;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+
+	}
+
 }
 @media handheld,screen and (min-width: 751px) {
 	/*
 		Desktop, laptop
 	*/
+	/*
+		CSS elements for footer
+	*/
+	.footer{
+		width:100%;
+		height:155px;
+		background-color: white;
+		overflow: hidden;
+		position: relative;
+	}
+	.footerLinks{
+		float: left;
+		margin:40px;
+		margin-left: 10%;
+	}
+	.footerLinks > div{
+		display: inline-block;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		font-size: 13px;
+		cursor:pointer;
+	}
+	.footerCopyright{
+		position: absolute;
+		top:70px;
+		left:10%;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		font-size: 13px;
+	}
+	.footerRightBox{
+		height:100%;
+		width:200px;
+		float: left;
+		margin-left: 100px;
+		text-align: left;
+		overflow: hidden;
+	}
+	.footerRightBoxInner{
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		margin-top: 40px;
+		font-size: 13px;
+	}
 	/*
 		CSS elements for navbar
 	*/
@@ -97,11 +238,149 @@ html,body{
 	*/
 	.topContainer{
 		width:100%;
-		height:500px;
+		height:100%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-image: url('../img/index_background.jpg');
-		background-position: 0px -300px;
+		background-position: 0px -180px;
+
 
 	}
+	/* left container on index page */
+	.topContainer_left{
+		height:100%;
+		width:35%;
+		background-color: rgba(29,48,80,0.7);
+		position: relative;
+		overflow: hidden;
+		float: left;
+	}
+	#topContainer_left_text{
+		color: rgb(200,200,200);
+		font-family: lato;
+		top: 40%;
+		left: 40%;
+		position: absolute;
+		font-size: 25px;
+		margin-left: -100px;
+	}
+	#topContainer_left_sub{
+		color: rgb(200,200,200);
+		font-family: lato;
+		top: 48%;
+		left: 50%;
+		position: absolute;
+		font-size: 20px;
+		margin-left: -100px;
+	}
+	/* Right container on idnex page	*/
+	.topContainer_right{
+		width:65%;
+		height:100%;
+		overflow: hidden;
+		float: left;
+	}
+	#topContainer_right_text{
+		color: white;
+		font-family: lato;
+		top: 55%;
+		left: 40%;
+		position: absolute;
+		font-size: 45px;
+	}
+	/*
+	Container for second panel on index page
+	*/
+	.secondContainer{
+		width:100%;
+		height:550px;
+		background-color:white;
+		overflow: hidden;
+		text-align: center;
+	}
+	.secondInner{
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		font-size: 30px;
+		width:70%;
+		margin:auto;
+		margin-top:100px;
+	}
+	/*
+		Container for third panel
+	*/
+	.title{
+		font-size: 80px;
+		text-align: center;
+		margin: auto;
+	}
+	.line{
+		width:25%;
+		height:1px;
+		margin:auto;
+		background-color: rgba(29,48,80,1);
+	}
+	.thirdContainer{
+		width:100%;
+		min-height:650px;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		background-color: white;
+		overflow: hidden;
+		background-size:cover;
+		background-image: url('../img/thirdContainer.jpg');
+	}
+	.thirdInner{
+		width:100%;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		height:100%;
+		background-color: rgba(255,255,255,0.7)
+	}
+	.thirdContainerBox{
+		width:300px;
+		height:300px;
+		margin:20px;
+		display: inline-block;
+		background-color: rgba(29,48,80,1);
+		cursor:pointer;
+	}
+
+}
+@media handheld,screen and (max-width: 1068px) {
+	/*	
+		CSS for index page
+		The container for the top of the index page
+	*/
+	.topContainer{
+		width:100%;
+		height:100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url('../img/index_background.jpg');
+		background-position: 0px 0px;
+	}
+	.footerCopyright{
+		position: absolute;
+		top:80px;
+		left:10%;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+
+	}
+	.footerRightBox{
+		height:100%;
+		width:200px;
+		margin-left: 100px;
+		text-align: center;
+		overflow: hidden;
+	}
+	.footerRightBoxInner{
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		margin-top: 40px;
+		font-size: 13px;
+	}
+
 }

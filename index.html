@@ -7,7 +7,34 @@
 	<link href='http://fonts.googleapis.com/css?family=Fauna+One|Roboto:400,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='css/style.css' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+	<script type="text/javascript">
+	/*
+	Creating the object that contains all the initial text display information
+	*/
+	var infoObject = 
+	{
+		'1':{
+			"left":"Structured Settlements",
+			"leftsub":"and a team you can trust",
+			"right":"Exceptional practice"
+		},
+		'2':{
+			"left":"Here for you",
+			"right":"blahbityblah blah blah"
+
+		}
+	};
+	$(document).ready(function(){
+		console.log(infoObject);
+		$("#topContainer_left_text").html(infoObject["1"]["left"]);
+		$("#topContainer_right_text").html(infoObject["1"]["right"]);
+
+		$("#topContainer_left_sub").html(infoObject["1"]["leftsub"]);
+
+	});
+	</script>
 </head>
 <body>
 	<div class="nav">
@@ -21,7 +48,58 @@
 		</ul>
 		<img id="hamburger" src="img/hamburger_blue.png" />
 	</div>
+	<!-- End Navbar -->
 	<div class="topContainer">
-		
+		<div class="topInner">
+			<div class="topContainer_left">
+				<div id="topContainer_left_text"></div>
+				<div id="topContainer_left_sub"></div>
+			</div>
+			<div class="topContainer_right">
+				<div id="topContainer_right_text"></div>
+			</div>
+		</div>
 	</div>
+	<div class="secondContainer">
+		<div class="secondInner">
+		<div class="line" style="width:40%;"></div><div class="title" style="" >
+		ABOUT US</div><br><br>Lorem ipsum dolor set ipsum dolor setipsum dolor setipsum dolor setipsum dolor set lorem ipsum dolor set ipsum dolor setipsum dolor setipsum dolor setipsum dolor set</div>
+	</div>
+	<div class="thirdContainer">
+		<div class="thirdInner">
+			<div class="line"></div>
+			<div class="title" >PROCESS</div><br><br>
+			<div class="thirdContainerBox"></div>
+			<div class="thirdContainerBox"></div>
+			<div class="thirdContainerBox"></div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="footerLinks">
+			<div>HOME |</div>
+			<div>ATTORNEYS |</div>
+			<div>WHAT WE DO |</div>
+			<div>RESOURCES |</div>
+			<div>CONTACT </div>
+		</div>
+		<div class="footerCopyright">&copy Copyright 2014 BlueStone Settlements, LLC All Rights Reserved</div>
+		<div class="footerRightBox">
+			<div class="footerRightBoxInner">
+				183 New Dorp Ln<br>
+				Staten Island NY, 10306
+			</div>
+		</div>
+		<div class="footerRightBox">
+			<div class="footerRightBoxInner">
+				T: (718) 987 2200<br>
+				F: (718) 987 2200<br>
+				E: fake@fake.com<br>
+				<div>Follow Us</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- End Footer -->
 </body>
