@@ -395,6 +395,40 @@ html,body{
 		font-size:25px;
 		color: rgba(29,48,80,1);
 	}
+	/*
+	CSS for the resources page
+	*/
+	.topContainer_resources{
+		width: 100%;
+		height: 200px;
+		padding-top: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/resources_background.jpg');
+		background-position: 0px -70px;
+		overflow: hidden;
+		position: relative;
+		background-attachment: fixed;	
+	}
+	.topContainer_resources_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(29,48,80,0.3);
+	}
+	.topContainer_resources_text{
+		position: absolute;
+		left:10px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 50px;
+		color:white;
+	}
+	.resourcesContainer{
+		width: 100%;
+		height:500px;
+	}
 
 }
 @media handheld,screen and (min-width: 751px) {
@@ -839,6 +873,40 @@ html,body{
 		font-size:25px;
 		color: rgba(29,48,80,1);
 	}
+	/*
+	CSS for the resources page
+	*/
+	.topContainer_resources{
+		width: 100%;
+		height: 200px;
+		padding-top: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/resources_background.jpg');
+		background-position: 0px -70px;
+		overflow: hidden;
+		position: relative;
+		background-attachment: fixed;	
+	}
+	.topContainer_resources_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(29,48,80,0.3);
+	}
+	.topContainer_resources_text{
+		position: absolute;
+		left:100px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 50px;
+		color:white;
+	}
+	.resourcesContainer{
+		width: 100%;
+		height:500px;
+	}
 
 }
 @media handheld,screen and (max-width: 1068px) {
@@ -888,8 +956,8 @@ html,body{
 	border:1px solid rgba(29,48,80,1);;
 	position: absolute;
 	padding:20px;
-	top:40%;
-	left:10%;
+	top:45%;
+	right:8%;
 	background-color: white;
 	font-size: 25px;
 }
