@@ -212,6 +212,189 @@ html,body{
 		width:100%;
 		min-height: 600px;
 	}
+		.topContainer_firm_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(255,153,0,0.2);
+	}
+	.topContainer_firm_text{
+		position: absolute;
+		left:100px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 50px;
+		color:white;
+	}
+	.firmBottom{
+		width:100%;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.firmBottomInner{
+		width:80%;
+		margin:auto;
+		text-align: left;
+		color:rgba(29,48,80,1);
+		font-family: 'Montserrat',sans-serif;
+		font-size: 25px;
+	}
+	.firmSecondBottom{
+		width:100%;
+		margin:auto;
+		height:1200px;
+		padding-bottom: 50px;
+	}
+	.firmSecondBottom_left{
+		width:100%;
+		height:50%;
+		float: left;
+		background-color: rgba(29,48,80,1);
+	}
+	.firmSecondBottom_right{
+		width:100%;
+		height:100%;
+		float: left;
+		background-size: cover;
+		background-position: 0px -300px;
+		background-image: url('../img/firm_rightbackground.jpg');
+		background-repeat: no-repeat;
+
+	}
+	/*
+
+		CSS for attorneys page
+	*/
+		.topContainer_attorney{
+		width: 100%;
+		height: 200px;
+		padding-top: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/attorney_top.jpg');
+		background-position: 0px -200px;
+		overflow: hidden;
+		position: relative;
+		background-attachment: fixed;	
+	}
+	.topContainer_attorney_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(29,48,80,0.3);
+	}
+	.topContainer_attorney_text{
+		position: absolute;
+		left:50px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 50px;
+		color:white;
+	}
+	.attorneyBottom{
+		width:100%;
+		padding-bottom: 50px;
+		overflow: hidden;
+		border-bottom: 1px solid rgba(29,48,80,1);
+	}
+	.attorneyBottomLeft{
+		width:100%;
+		height: 100%;
+		float: left;
+		text-align: center;
+	}
+	.attorneyBottomRight{
+		width:100%;
+		height:100%;
+		float: left;
+		text-align: center;
+	}
+	.attorneyPic{
+		height:350px;
+		width:350px;
+		border-radius: 50%;
+		margin:auto;
+		margin-top: 50px;
+	}
+	.attorneyName{
+		width: 100%;
+		text-align: center;
+		font-family: 'Montserrat',sans-serif;
+		color: rgba(29,48,80,1);
+		font-size: 35px;
+		margin-top: 50px;
+	}
+	.attorneyDummyText{
+		font-family: 'Montserrat',sans-serif;
+		color: rgba(29,48,80,1);
+		font-size: 20px;
+		text-align: left;
+		width:65%;
+		margin:auto;
+		margin-top: 50px;
+	}
+		/*
+	Top container for what we do page
+	CSS for what we do page
+	*/
+	.topContainer_whatwedo{
+		width: 100%;
+		height: 200px;
+		padding-top: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/whatwedo_background.jpg');
+		background-position: 0px -100px;
+		overflow: hidden;
+		position: relative;
+		background-attachment: fixed;	
+	}
+	.topContainer_whatwedo_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(29,48,80,0.3);
+	}
+	.topContainer_whatwedo_text{
+		position: absolute;
+		left:10px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 50px;
+		color:white;
+	}
+	.whatwedo_container{
+		width:100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		overflow: hidden;
+	}
+	.whatwedo_inner_container{
+		width:85%;
+		margin:auto;
+	}
+	.whatwedo_title{
+   		font-family: 'Montserrat',sans-serif;
+		font-size:40px;
+		color: rgba(29,48,80,1);
+	}
+	.whatwedo_description{
+		width: 80%;
+		margin-top: 30px;
+   		font-family: 'Montserrat',sans-serif;
+		font-size:15px;
+		color: rgba(29,48,80,1);
+		line-height: 30px;
+		letter-spacing: 1px;
+	}
+	.whatwedo_list{
+		 font-family: 'Montserrat',sans-serif;
+		font-size:25px;
+		color: rgba(29,48,80,1);
+	}
 
 }
 @media handheld,screen and (min-width: 751px) {
@@ -482,7 +665,7 @@ html,body{
 		height: 100%;
 		padding-top: 250px;
 		margin-top: -250px;
-		background-color: rgba(255,153,0,0.2);
+		background-color: rgba(29,48,80,0.3);
 	}
 	.topContainer_firm_text{
 		position: absolute;
@@ -526,7 +709,135 @@ html,body{
 		background-position: 0px -300px;
 		background-image: url('../img/firm_rightbackground.jpg');
 		background-repeat: no-repeat;
-
+	}
+	.topContainer_attorney{
+		width: 100%;
+		height: 200px;
+		padding-top: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/attorney_top.jpg');
+		background-position: 0px -200px;
+		overflow: hidden;
+		position: relative;
+		background-attachment: fixed;	
+	}
+	.topContainer_attorney_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(29,48,80,0.3);
+	}
+	.topContainer_attorney_text{
+		position: absolute;
+		left:100px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 50px;
+		color:white;
+	}
+	.attorneyBottom{
+		width:100%;
+		height:800px;
+		overflow: hidden;
+		border-bottom: 1px solid rgba(29,48,80,1);
+	}
+	.attorneyBottomLeft{
+		width:50%;
+		height: 100%;
+		float: left;
+		text-align: center;
+	}
+	.attorneyBottomRight{
+		width:50%;
+		height:100%;
+		float: left;
+		text-align: center;
+	}
+	.attorneyPic{
+		height:350px;
+		width:350px;
+		border-radius: 50%;
+		margin:auto;
+		margin-top: 50px;
+	}
+	.attorneyName{
+		width: 100%;
+		text-align: center;
+		font-family: 'Montserrat',sans-serif;
+		color: rgba(29,48,80,1);
+		font-size: 35px;
+		margin-top: 50px;
+	}
+	.attorneyDummyText{
+		font-family: 'Montserrat',sans-serif;
+		color: rgba(29,48,80,1);
+		font-size: 20px;
+		text-align: left;
+		width:65%;
+		margin:auto;
+		margin-top: 50px;
+	}
+	/*
+	Top container for what we do page
+	CSS for what we do page
+	*/
+	.topContainer_whatwedo{
+		width: 100%;
+		height: 200px;
+		padding-top: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../img/whatwedo_background.jpg');
+		background-position: 0px -300px;
+		overflow: hidden;
+		position: relative;
+		background-attachment: fixed;	
+	}
+	.topContainer_whatwedo_overlay{
+		width: 100%;
+		height: 100%;
+		padding-top: 250px;
+		margin-top: -250px;
+		background-color: rgba(29,48,80,0.3);
+	}
+	.topContainer_whatwedo_text{
+		position: absolute;
+		left:100px;
+		bottom:100px;
+		font-family: 'Montserrat',sans-serif;
+		font-size: 50px;
+		color:white;
+	}
+	.whatwedo_container{
+		width:100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		overflow: hidden;
+	}
+	.whatwedo_inner_container{
+		width:85%;
+		margin:auto;
+	}
+	.whatwedo_title{
+   		font-family: 'Montserrat',sans-serif;
+		font-size:40px;
+		color: rgba(29,48,80,1);
+	}
+	.whatwedo_description{
+		width: 80%;
+		margin-top: 30px;
+   		font-family: 'Montserrat',sans-serif;
+		font-size:15px;
+		color: rgba(29,48,80,1);
+		line-height: 30px;
+		letter-spacing: 1px;
+	}
+	.whatwedo_list{
+		 font-family: 'Montserrat',sans-serif;
+		font-size:25px;
+		color: rgba(29,48,80,1);
 	}
 
 }
@@ -565,4 +876,20 @@ html,body{
 		font-size: 13px;
 	}
 
+}
+#map-canvas{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+#mapContact{
+	font-family: 'Montserrat', sans-serif;
+	color:rgba(29,48,80,1);
+	border:1px solid rgba(29,48,80,1);;
+	position: absolute;
+	padding:20px;
+	top:40%;
+	left:10%;
+	background-color: white;
+	font-size: 25px;
 }

@@ -8,6 +8,30 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='css/style.css' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAEby7YD0fAH-SKQamGMydNJtK-oL7g6vA&sensor=true">
+    </script>
+
+	<script type="text/javascript">
+	function initialize() {
+	var location = new google.maps.LatLng(40.573,-74.11457);
+	var mapOptions = {
+	  center: new google.maps.LatLng(40.573, -74.11457),
+	  disableDefaultUI: true,
+	  zoom: 8
+	};
+	var map = new google.maps.Map(document.getElementById("map-canvas"),
+	    mapOptions);
+	new google.maps.Marker({
+        position: location,
+        map: map
+    });
+
+	}
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
 
 </head>
 <body>
@@ -22,28 +46,9 @@
 		</ul>
 		<img id="hamburger" src="img/hamburger_blue.png" />
 	</div>
-	<!-- End Navbar -->
-	<div class="topContainer_firm">
-		<div class="topContainer_firm_overlay">
-			<div class="topContainer_firm_text">
-				OUR FIRM
-			</div>
-		</div>
-	</div>
 
-	<!-- Bottom container -->
-	<div class="firmBottom">
-		<div class="firmBottomInner">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-	</div>
-
-	<div class="firmSecondBottom">
-		<div class="firmSecondBottom_left"></div>
-		<div class="firmSecondBottom_right"></div>
-	</div>
-
-
+	<div id="map-canvas"></div>
+	<div id="mapContact">Contact Us: <br>(718) 987 2200<br><br>fake@fake.com<br><br>183 New Dorp Ln<br>Staten Island NY, 10306</div>
 
 	<!-- Footer -->
 	<div class="footer">
