@@ -524,6 +524,15 @@ html,body{
 	.nav > ul > a{
 		text-decoration: none;
 		color:rgb(34,34,34);
+		-webkit-transition: 300ms ease-out 0.01s;
+		-moz-transition: 300ms ease-out 0.01s;
+		-o-transition: 300ms ease-out 0.01s;
+		transition: 300ms ease-out 0.01s;
+	}
+	.nav > ul > a:hover{
+		text-decoration: none;
+		color:#ff9900;
+
 	}
 	.nav > ul > a > li{
 		display: inline;
