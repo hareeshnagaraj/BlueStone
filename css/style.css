@@ -150,7 +150,7 @@ html,body{
 		float: left;
 		margin:40px;
 	}
-	.footerLinks > div{
+	.footerLinks >  div{
 		display: inline-block;
 		font-family: 'Montserrat', sans-serif;
 		color:rgba(29,48,80,1);
@@ -158,6 +158,24 @@ html,body{
 		font-size: 13px;
 
 	}
+	.footerLinks >  div > a{
+		display: inline-block;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		cursor:pointer;
+		font-size: 13px;
+		text-decoration: none;
+		-webkit-transition: 300ms ease-out 0.01s;
+		-moz-transition: 300ms ease-out 0.01s;
+		-o-transition: 300ms ease-out 0.01s;
+		transition: 300ms ease-out 0.01s;
+
+	}
+	.footerLinks > div > a:hover{
+		color:#ff9900;
+	
+	}
+
 	.footerCopyright{
 		font-size: 13px;
 		top:80px;
@@ -465,6 +483,23 @@ html,body{
 		color:rgba(29,48,80,1);
 		font-size: 13px;
 		cursor:pointer;
+	}
+	.footerLinks >  div > a{
+		display: inline-block;
+		font-family: 'Montserrat', sans-serif;
+		color:rgba(29,48,80,1);
+		cursor:pointer;
+		font-size: 13px;
+		text-decoration: none;
+		-webkit-transition: 300ms ease-out 0.01s;
+		-moz-transition: 300ms ease-out 0.01s;
+		-o-transition: 300ms ease-out 0.01s;
+		transition: 300ms ease-out 0.01s;
+
+	}
+	.footerLinks > div > a:hover{
+		color:#ff9900;
+
 	}
 	.footerCopyright{
 		position: absolute;
