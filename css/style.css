@@ -31,6 +31,13 @@ html,body{
 .hamburgerNav > ul > a{
 	text-decoration: none;
 	color: rgba(29,48,80,1);
+	-webkit-transition: 500ms ease-out 0.05s;
+	-moz-transition: 500ms ease-out 0.05s;
+	-o-transition: 500ms ease-out 0.05s;
+	transition: 500ms ease-out 0.05s;
+}
+.hamburgerNav > ul > a:hover{
+	color: #ff9900;
 }
 @media handheld,screen and (max-width: 750px) {
 	/*
