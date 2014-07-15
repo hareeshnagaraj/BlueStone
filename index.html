@@ -9,7 +9,8 @@
 	<link href='css/style.css' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<script src = "hamburger.js"></script>
-
+	<link rel="stylesheet" href="css/formoid-metro-cyan.css" type="text/css" />
+	<script src = "formoid-metro-cyan.js"></script>
 	<script type="text/javascript">
 	var currentInfo = 1;
 	/*
@@ -111,6 +112,15 @@
 	</script>
 </head>
 <body>
+
+<form id="contactform" class="formoid-metro-cyan" style="font-size:14px;font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px;text-align:left;" method="post"><div class="title"><h2>Contact Us</h2></div>
+	<div class="element-input" ><label class="title">Name<span class="required">*</span></label><input class="large" type="text" name="input" required="required"/></div>
+	<div class="element-input" ><label class="title">Email<span class="required">*</span></label><input class="large" type="text" name="input1" required="required"/></div>
+	<div class="element-input" ><label class="title">Phone<span class="required">*</span></label><input class="large" type="text" name="input2" required="required"/></div>
+	<div class="element-textarea" ><label class="title">What are you interested in?</label><textarea class="medium" name="textarea" cols="20" rows="5" ></textarea></div>
+
+<div class="submit" style="text-align:center;"><input style="margin:0;" type="submit" value="Submit"/></div></form>
+
 	<div class="nav">
 		<a href="index.html"><div class="navLogo"><img src="img/blueStone_ghost.png" /></div><a>
 		<ul>
@@ -119,6 +129,8 @@
 			<a href="whatwedo.html"><li>WHAT WE DO</li></a>
 			<a href="resources.html"><li>RESOURCES</li></a>
 			<a href="contact.html"><li>CONTACT</li></a>
+			<li style="display:inline-block;"><img id="contactplane" src="img/contact_plane.png" /></li>
+
 		</ul>
 		<img id="hamburger" src="img/hamburger_blue.png" />
 	</div>
